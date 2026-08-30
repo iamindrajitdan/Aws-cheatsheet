@@ -1,441 +1,255 @@
-# Cloud Computing
+# AWS Services Quick Reference
 
-Service delivery model over the internet (cloud). This includes but is not limited to:
-* **Compute power:** Servers such as Windows, Linux, hosting environments, etc.
-* **Storage:** Files and/or databases.
-* **Networking:** In Azure, but also outside when connecting to your company network.
-* **Analytics services:** For visualization and telemetry data.
+## Analytics
+* **Amazon Athena** is an interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL. Athena is serverless, so there is no infrastructure to manage, and you pay only for the queries that you run.
+* **Amazon CloudSearch** is a managed service in the AWS Cloud that makes it simple and cost-effective to set up, manage, and scale a search solution for your website or application.
+* **Amazon Elasticsearch Service** makes it easy to deploy, secure, operate, and scale Elasticsearch to search, analyze, and visualize data in real-time.
+* **Amazon EMR** is the industry-leading cloud big data platform for processing vast amounts of data using open source tools such as Apache Spark, Apache Hive, Apache HBase, Apache Flink, Apache Hudi, and Presto.
+* **Amazon FinSpace** is a data management and analytics service purpose-built for the financial services industry (FSI). FinSpace reduces the time you spend finding and preparing petabytes of financial data to be ready for analysis from months to minutes.
+* **Amazon Kinesis** makes it easy to collect, process, and analyze real-time, streaming data so you can get timely insights and react quickly to new information.
+* **Amazon Kinesis Data Firehose** is the easiest way to reliably load streaming data into data stores and analytics tools.
+* **Amazon Kinesis Data Analytics** is the easiest way to analyze streaming data, gain actionable insights, and respond to your business and customer needs in real time.
+* **Amazon Kinesis Data Streams** is a massively scalable and durable real-time data streaming service. GBPS of data.
+* **Amazon Redshift** is the most widely used cloud data warehouse. It makes it fast, simple and cost effective to analyze all your data using standard SQL and your existing Business Intelligence (BI) tools.
+* **Amazon QuickSight** is a fast, cloud-powered business intelligence (BI) service that makes it easy for you to deliver insights to everyone in your organization.
+* **AWS Data Exchange** makes it easy to find, subscribe to, and use third-party data in the cloud.
+* **AWS Data Pipeline** is a web service that helps you reliably process and move data between different AWS compute and storage services, as well as on-premises data sources, at specified intervals.
+* **AWS Glue** is a fully managed extract, transform, and load (ETL) service that makes it easy for customers to prepare and load their data for analytics.
+* **AWS Lake Formation** is a service that makes it easy to set up a secure data lake in days. A data lake is a centralized, curated, and secured repository that stores all your data, both in its original form and prepared for analysis.
 
-## Key Concepts
-* **Scalability:** The ability to scale (allocate and deallocate resources at any time).
-* **Elasticity:** The ability to scale dynamically.
-* **Agility:** The ability to react fast (scale quickly).
-* **Fault tolerance:** The ability to maintain system uptime while physical and service component failures happen.
-* **Disaster recovery:** The process and design principle which allows a system to recover from natural or human-induced disasters.
-* **High availability:** The agreed level of operational uptime for the system. It is a simple calculation of system uptime versus the whole lifetime of the system. 
-  * `Availability = uptime / (uptime + downtime)`
+## Application Integration
+* **AWS Step Functions** is a fully managed service that makes it easy to coordinate the components of distributed applications and microservices using visual workflows.
+* **Amazon AppFlow** is a fully managed integration service that enables you to securely transfer data between Software-as-a-Service (SaaS) applications like Salesforce, Zendesk, Slack, and ServiceNow, and AWS services like Amazon S3 and Amazon Redshift, in just a few clicks.
+* **Amazon EventBridge** is a serverless event bus that makes it easier to build event-driven applications at scale using events generated from your applications, integrated Software-as-a-Service (SaaS) applications, and AWS services.
+* **Amazon Simple Notification Service (Amazon SNS)** is a highly available, durable, secure, fully managed pub/sub messaging service that enables you to decouple microservices, distributed systems, and serverless applications.
+* **Amazon Simple Queue Service (Amazon SQS)** is a fully managed message queuing service that enables you to decouple and scale microservices, distributed systems, and serverless applications.
+* **Amazon Simple Workflow Service (Amazon SWF)** helps developers build, run, and scale background jobs that have parallel or sequential steps.
 
-## Economies of Scale
-The principle of economies of scale states that as companies grow, they become more effective at managing shared operations. Be that HR and hiring, taxes, accounting, internal operations, marketing, big purchases via contracts meaning better discounts, etc.
+## AR and VR
+* **Amazon Sumerian** lets you create and run virtual reality (VR), augmented reality (AR), and 3D applications quickly and easily without requiring any specialized programming or 3D graphics expertise.
 
-Because of those, companies can save/earn more which in return allows for a reduction in the cost of their services to their customers. This is the so-called ‘price per unit’. 
+## Blockchain
+* **Amazon Managed Blockchain** is a fully managed service that makes it easy to create and manage scalable blockchain networks using the popular open source frameworks Hyperledger Fabric and Ethereum.
 
-It’s not possible to go to 0 because, in the end, some underlying infrastructure needs to run to provide the services. But the larger the scale, the more benefits can be passed to customers. In fact, at the current scale, Microsoft can already offer multiple services for free due to how small a fraction of the cost it is for them.
+## Business Applications
+* **Alexa for Business** is a service that enables organizations and employees to use Alexa to get more work done. 
+* **Amazon Chime** is a communications service that transforms online meetings with a secure, easy-to-use application that you can trust.
+* **Amazon Simple Email Service (Amazon SES)** is a cost-effective, flexible, and scalable email service that enables developers to send mail from within any application.
+* **Amazon WorkDocs** is a fully managed, secure enterprise storage and sharing service with strong administrative controls and feedback capabilities that improve user productivity.
+* **Amazon WorkMail** is a secure, managed business email and calendar service with support for existing desktop and mobile email client applications.
 
-## CapEx vs OpEx
-Differences between Capital Expenditure and Operational Expenditure:
+## Cloud Financial Management
+* **AWS Application Cost Profiler** provides you the ability to track the consumption of shared AWS resources used by software applications and report granular cost breakdown across tenant base.
+* **AWS Cost Explorer** has an easy-to-use interface that lets you visualize, understand, and manage your AWS costs and usage over time.
+* **AWS Budgets** gives you the ability to set custom budgets that alert you when your costs or usage exceed (or are forecasted to exceed) your budgeted amount.
+* **The AWS Cost & Usage Report** is a single location for accessing comprehensive information about your AWS costs and usage.
+* **Savings Plans** is a flexible pricing model offering lower prices compared to On-Demand pricing, in exchange for a specific usage commitment.
 
-| Feature | Capital Expenditure (CapEx) | Operational Expenditure (OpEx) |
-|---|---|---|
-| **Up front cost** | Significant | None |
-| **Ongoing cost** | Low | Based on usage |
-| **Tax Deduction** | Over time | Same year |
-| **Early Termination** | No | Anytime |
-| **Maintenance** | Significant | Low |
-| **Value over time** | Lowers | No change |
+## Compute Services
+* **Amazon Elastic Compute Cloud (Amazon EC2)** is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale computing easier for developers.
+* **Amazon EC2 Auto Scaling** helps you maintain application availability and allows you to automatically add or remove EC2 instances.
+* **EC2 Image Builder** simplifies the building, testing, and deployment of Virtual Machine and container images for use on AWS or on-premises.
+* **Amazon Lightsail** is designed to be the easiest way to launch and manage a virtual private server with AWS. 
+* **AWS App Runner** is a fully managed service that makes it easy for developers to quickly deploy containerized web applications and APIs, at scale and with no prior infrastructure experience required.
+* **AWS Batch** enables developers, scientists and engineers to easily and efficiently run hundreds of thousands of batch computing jobs on AWS.
+* **AWS Elastic Beanstalk** is an easy-to-use service for deploying and scaling web applications and services developed with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on familiar servers such as Apache, Nginx, Passenger, and Internet Information Services (IIS).
+* **AWS Fargate** is a compute engine for Amazon ECS that allows you to run containers without having to manage servers or clusters.
+* **AWS Lambda** lets you run code without provisioning or managing servers.
+* **The AWS Serverless Application Repository** enables you to quickly deploy code samples, components, and complete applications for common use cases such as web and mobile back-ends, event and data processing, logging, monitoring, IoT, and more.
+* **AWS Outposts** bring native AWS services, infrastructure, and operating models to virtually any data center, co-location space, or on-premises facility.
+* **AWS Wavelength** is an AWS Infrastructure offering optimized for mobile edge computing applications.
 
-## What is a Consumption-Based Model?
-The consumption-based model is a pricing model used in the cloud so that customers are only charged based on their resource usage.
+## Contact Center
+* **Amazon Connect** is a self-service, omnichannel cloud contact center service that makes it easy for any business to deliver better customer service at lower cost.
 
-This model is characterized by:
-* No associated upfront cost.
-* No wasted resources, as no charges are incurred for unused resources. *(Note: "Unused" is different per service. For instance, blob storage that stores any data is considered used as it consumes space. VMs that are running consume CPU/memory even without traffic, so they incur charges).*
-* Pay for what you need.
-* Stop paying when you don’t.
+## Containers
+* **Amazon Elastic Container Registry (ECR)** is a fully-managed Docker container registry that makes it easy for developers to store, manage, and deploy Docker container images.
+* **Amazon Elastic Container Service (ECS)** is a highly scalable, high-performance container orchestration service that supports Docker containers and allows you to easily run and scale containerized applications on AWS.
+* **Amazon Elastic Kubernetes Service (EKS)** makes it easy to deploy, manage and scale containerized applications using Kubernetes on AWS.
+* **AWS App2Container (A2C)** is a command-line tool for modernizing .NET and Java applications into containerized applications.
 
-Consumption is the virtual metric used to calculate how much each resource (service) in Azure was used. Each service has many smaller metrics that track its consumption to offer the best possible pricing model on a very granular level.
+## Database
+* **Amazon Aurora** is a MySQL and PostgreSQL compatible relational database engine that combines the speed and availability of high-end commercial databases with the simplicity and cost-effectiveness of open source databases. 
+* **Amazon DynamoDB** is a key-value and document database that delivers single-digit millisecond performance at any scale.
+* **Amazon ElastiCache** is a web service that makes it easy to deploy, operate, and scale an in-memory cache in the cloud.
+* **Amazon Keyspaces (for Apache Cassandra)** is a scalable, highly available, and managed Apache Cassandra–compatible database service.
+* **Amazon Neptune** is a fast, reliable, fully-managed graph database service that makes it easy to build and run applications that work with highly connected datasets.
+* **Amazon Relational Database Service (Amazon RDS)** makes it easy to set up, operate, and scale a relational database in the cloud.
+* **Amazon Relational Database Service (Amazon RDS) on VMware** lets you deploy managed databases in on-premises VMware environments using the Amazon RDS technology.
+* **Amazon QLDB** is a fully managed ledger database that provides a transparent, immutable, and cryptographically verifiable transaction log owned by a central trusted authority.
+* **Amazon Timestream** is a fast, scalable, fully managed time series database service for IoT and operational applications that makes it easy to store and analyze trillions of events per day at 1/10th the cost of relational databases.
+* **Amazon DocumentDB (with MongoDB compatibility)** is a fast, scalable, highly available, and fully managed document database service that supports MongoDB workloads.
 
----
+## Developer Tools
+* **Amazon Corretto** is a no-cost, multiplatform, production-ready distribution of the Open Java Development Kit (OpenJDK).
+* **AWS Cloud9** is a cloud-based integrated development environment (IDE) that lets you write, run, and debug your code with just a browser. It includes a code editor, debugger, and terminal.
+* **AWS CloudShell** is a browser-based shell that makes it easy to securely manage, explore, and interact with your AWS resources.
+* **AWS CodeArtifact** is a fully managed artifact repository service that makes it easy for organizations of any size to securely store, publish, and share software packages used in their software development process.
+* **AWS CodeBuild** is a fully managed build service that compiles source code, runs tests, and produces software packages that are ready to deploy. 
+* **AWS CodeCommit** is a fully managed source control service that makes it easy for companies to host secure and highly scalable private Git repositories.
+* **AWS CodeDeploy** is a service that automates code deployments to any instance, including EC2 instances and instances running on premises.
+* **AWS CodePipeline** is a fully managed continuous delivery service that helps you automate your release pipelines for fast and reliable application and infrastructure updates.
+* **AWS CodeStar** enables you to quickly develop, build, and deploy applications on AWS.
+* **AWS Fault Injection Simulator** is a fully managed service for running fault injection experiments on AWS that makes it easier to improve an application’s performance, observability, and resiliency.
+* **AWS X-Ray** helps developers analyze and debug distributed applications in production or under development, such as those built using a microservices architecture.
 
-## Service Models Responsibilities
-"As a service" means which party will manage the particular layer and all the layers below.
+## End User Computing
+* **Amazon AppStream 2.0** is a fully managed application streaming service. You centrally manage your desktop applications on AppStream 2.0 and securely deliver them to any computer.
+* **Amazon WorkSpaces** is a fully managed, secure cloud desktop service. You can use WorkSpaces to provision either Windows or Linux desktops in just a few minutes and quickly scale to provide thousands of desktops to workers across the globe.
+* **Amazon WorkLink** is a fully managed service that lets you provide your employees with secure, easy access to your internal corporate websites and web apps using their mobile phones.
 
-* **Software layer:** Consists of the application (code and set) & the application data.
-* **Platform layer:** Means all the supporting software and the operating system required to host the application.
-* **Infrastructure layer:** Consists of the hardware, infrastructure, and virtualization required to host the platform.
+## Front-End Web & Mobile Services
+* **Amazon Location Service** makes it easy for developers to add location functionality to applications without compromising data security and user privacy.
+* **Amazon Pinpoint** makes it easy to send targeted messages to your customers through multiple engagement channels.
+* **AWS Amplify** makes it easy to create, configure, and implement scalable mobile applications powered by AWS.
+* **AWS Device Farm** is an app testing service that lets you test and interact with your Android, iOS, and web apps on many devices at once, or reproduce issues on a device in real time.
+* **AWS AppSync** is a serverless back-end for mobile, web, and enterprise applications.
 
-| Component | Layer |
-|---|---|
-| Application | Software |
-| Data | Software |
-| Runtime | Platform |
-| Middleware | Platform |
-| Operating System | Platform |
-| Virtualization | Infrastructure |
-| Servers | Infrastructure |
-| Networking | Infrastructure |
-| Storage | Infrastructure |
-
-### Responsibility Matrix
-
-| Layer | On-Premises | IaaS | PaaS | SaaS |
-|---|---|---|---|---|
-| **Application** | You | You | You | Cloud provider |
-| **Data** | You | You | You | Cloud provider |
-| **Runtime** | You | You | Cloud provider | Cloud provider |
-| **Middleware** | You | You | Cloud provider | Cloud provider |
-| **Operating System** | You | You | Cloud provider | Cloud provider |
-| **Virtualization** | You | Cloud provider | Cloud provider | Cloud provider |
-| **Servers** | You | Cloud provider | Cloud provider | Cloud provider |
-| **Networking** | You | Cloud provider | Cloud provider | Cloud provider |
-| **Storage** | You | Cloud provider | Cloud provider | Cloud provider |
-
----
-
-## Cloud Deployment Model
-Cloud Deployment Model is simply a separation which describes where the company resources are deployed (whether in a public cloud provider environment or private datacenter).
-
-| Model | Cloud Provider | Own Datacenter |
-|---|---|---|
-| **Public** | ✅ | ✖ |
-| **Hybrid** | ✅ | ✅ |
-| **Private** | ✖ | ✅ |
-
-### Public Cloud
-* **Key Characteristics:** Everything runs on cloud provider hardware. No local hardware. Some services share hardware with other customers.
-* **Advantages:** No CapEx (No initial investment), High Availability, Agility, Pay as you Go (PAYG) pricing, No hardware maintenance, No deep technical skills required.
-* **Disadvantages:** Not all security and compliance policies can be met, No ownership over the physical infrastructure, Rare specific scenarios can’t be done.
-
-### Private Cloud
-* **Key Characteristics:** Everything runs on your own datacenter. Self-service should be provided. You maintain the hardware.
-* **Advantages:** Can support any scenario, Total control over security and infrastructure, Can meet any security and compliance policy.
-* **Disadvantages:** Initial investment is required (CapEx), Limited agility constrained by server capacity and team skills, Very dependent on IT skills & expertise.
-
-### Hybrid Cloud
-* **Key Characteristics:** Combines both Public & Private cloud.
-* **Advantages:** Great flexibility, You can run any legacy apps in private cloud, Can utilize existing infrastructure, Meet any security & compliance requirements, Can take advantage of all public cloud benefits.
-* **Disadvantages:** Can be more expensive, Complicated to manage due to larger landscape, Most dependent on IT skills & expertise from all three models.
-
----
-
-## Azure Core Infrastructure
-
-### Data Center
-* Physical facility.
-* Hosting for a group of networked servers.
-* Own power, cooling & networking infrastructure.
-
-### Region
-* Geographical area on the planet.
-* One, but usually more, datacenters connected with a low-latency network (<2 milliseconds).
-* Location for your services.
-* Some services are available only in certain regions, while some are global services (not assigned/deployed in a specific region).
-* Globally available with 50+ regions.
-* Special government regions (US DoD Central, US Gov Virginia, etc.).
-* Special partnered regions (China East, China North).
-
-### Availability Zone
-* Regional feature.
-* Grouping of physically separate facilities designed to protect from data center failures.
-* If a zone goes down, others continue working.
-* **Two service categories:**
-  * Zonal services (Virtual Machines, Disks, etc.)
-  * Zone-redundant services (SQL, Storage, etc.)
-* Not all regions are supported (supported regions have three or more zones).
-* A zone is one or more data centers.
-
-### Region Pair
-* Each region is paired with another region, making it a region pair.
-* Region pairs are static and cannot be chosen.
-* Each pair resides within the same geography (Exception: Brazil South).
-* Physical isolation with at least 300 miles distance (when possible).
-* Some services have platform-provided replication.
-* Planned updates roll out sequentially across pairs.
-* Data residency is maintained for disaster recovery.
-
-| Region Pair A | Region Pair B |
-|---|---|
-| East US | West US |
-| UK West | UK South |
-| North Europe (Ireland) | West Europe (Netherlands) |
-| East Asia (Hong Kong) | Southeast Asia (Singapore) |
-
-### Geographies
-* Discrete market typically containing two or more regions.
-* Ensures data residency, sovereignty, resiliency, and compliance requirements are met.
-* Fault-tolerant to protect from region-wide failures.
-* Broken up into areas: Americas, Europe, Asia Pacific, Middle East and Africa.
-* Each region belongs to only one Geography.
-
----
-
-## Azure Management
-
-### Azure Resource
-* Object used to manage services in Azure.
-* Represents service lifecycle.
-* Saved as a JSON definition.
-
-### Resource Groups
-* Grouping of resources that holds logically related resources.
-* Typically organized by: Type, Lifecycle (app, environment), Department, Billing, Location, or a combination of those.
-* **Additional Info:**
-  * Each resource must be in one, and only one, resource group.
-  * Resource groups have their own location assigned, but resources inside them can reside in different locations.
-  * Resources can be moved between resource groups.
-  * Resource groups can’t be nested.
-  * Organize based on organization needs, considering: Billing, Security and access management, Application Lifecycle.
-
-### Resource Manager (ARM)
-* Management Layer for all resources and resource groups.
-* Unified language.
-* Controls access and resources.
-
----
-
-## Compute & Virtualization
-
-### Virtualization
-* Emulation of physical machines.
-* Different virtual hardware configuration per machine/app.
-* Different operating systems per machine/app.
-* Total separation of environments (file systems, services, ports, middleware, configuration).
-
-### Virtual Machines (VMs)
-* **IaaS (Infrastructure as a Service)**
-* Total control over the operating system and the software.
-* Supports marketplace and custom images.
-* **Best suited for:** Custom software requiring custom system configuration, Lift-and-shift scenarios, Running any application/scenario (web apps, databases, desktop apps, jumpboxes, gateways, etc.).
-
-### Virtual Machine Scale Sets
-* **IaaS**
-* Set of identical virtual machines with built-in auto-scaling features.
-* Designed for manual and auto-scaled workloads like web services, batch processing, etc.
-
-### Containers
-* Use host’s operating system to emulate the OS (whereas VMs emulate hardware).
-* Lightweight (no O/S overhead).
-* Lower development effort and maintenance.
-* Quicker response to demand changes.
-
-### Azure Container Instances (ACI)
-* **PaaS**
-* Simplest and fastest way to run a container in Azure (Serverless Containers).
-* Designed for small/simple web apps/services, background jobs, and scheduled scripts.
-
-### Azure Kubernetes Service (AKS)
-* **PaaS**
-* Open-source container orchestration platform.
-* Highly scalable and customizable.
-* Designed for high-scale container deployments.
-
-### App Service
-* **PaaS**
-* Designed as an enterprise-grade web application service.
-* Supports multiple programming languages and containers.
-
-### Azure Functions (Function Apps)
-* **PaaS / FaaS (Serverless)**
-* Two hosting/pricing models: Consumption-based plan and Dedicated plan.
-* Designed for micro/nano-services.
-
-#### Compute Summary
-* **Virtual Machines (IaaS):** Custom software/requirements, high control.
-* **VM Scale Sets (IaaS):** Auto-scaled VM workloads.
-* **Container Instances (PaaS):** Simple container hosting, easy to start.
-* **Kubernetes Service (PaaS):** Highly scalable container platform.
-* **App Services (PaaS):** Web applications with enterprise hosting features.
-* **Functions (Serverless):** Micro/nano-services, consumption-based pricing.
-
----
-
-## Azure Networking
-Connects cloud and on-premises networks and provides internal cloud routing.
-
-* **Azure Virtual Network (VNet):** Logically isolated networking components. Segmented into one or more discrete sections (subnets). Enables communication of resources with each other, internet, and on-premises. Scoped to a single region (VNet peering allows cross-region). Handles Isolation, Segmentation, Communication, Filtering, Routing.
-* **Azure Load Balancer:** Even traffic distribution. Supports inbound/outbound, high-availability, TCP/UDP, internal/external traffic, and port forwarding. High scale.
-* **VPN Gateway:** Specific type of virtual network gateway for on-premises to Azure traffic over the public internet.
-* **Application Gateway:** Web traffic load balancer, Web application firewall, Redirection, Session affinity, URL Routing, SSL termination.
-* **Content Delivery Network (CDN):** Defines content, minimizes latency via POPs (points of presence) across many locations.
-
----
-
-## Data & Storage
-
-### Data Types
-* **Structured:** Data represented using tables with strict schemas. Used in relational databases.
-* **Semi-structured:** Data represented using tables but without a strict defined schema (NoSQL). Rows must only have a unique key identifier.
-* **Unstructured:** Any files in any format (binary files, images, movies, etc.).
-
-### Storage Account
-A group of services used to store files, messages, and semi-structured data. Highly scalable (petabytes), highly durable (up to 16 nines), and the cheapest per GB storage.
-* **Blob Storage:** Binary Large Object. Designed for unstructured files. Three tiers: Hot (frequent access), Cool (infrequent access), Archive (rarely accessed).
-* **Queue Storage:** Storage for small pieces of data (messages). Designed for scalable asynchronous processing.
-* **Table Storage:** Storage for semi-structured data (NoSQL). Fast access, no strict schema or foreign keys.
-* **File Storage:** Storage for files accessed via shared drive protocols (SMB). Designed to extend on-premise file shares (lift-and-shift).
-* **Disk Storage:** Persistent storage for VMs. Comes in different sizes, types (SSD, HDD), and performance tiers. Disks can be unmanaged or managed.
-
-### Databases
-* **Cosmos DB:** Globally distributed NoSQL (semi-structured) database service. Schema-less. Multiple APIs (SQL, MongoDB, Cassandra, Gremlin, Table Storage). Designed for highly responsive, low-latency (<10ms) multi-regional applications.
-* **SQL Database:** Relational database service (PaaS / DBaaS). Structured data with rich query capabilities.
-  * *Azure SQL product family:* Azure SQL Database, Azure Database for MySQL, Azure Database for PostgreSQL, Azure SQL Managed Instance, Azure SQL on VM (IaaS), Azure Synapse Analytics (formerly SQL DW).
-
----
-
-## Azure Marketplace
-An “Azure Shop” where you purchase services and solutions for the Azure platform. Products are templates delivered by first and third-party vendors and can leverage IaaS, PaaS, and SaaS categories.
-
----
+## Game Tech
+* **Amazon GameLift** is a managed service for deploying, operating, and scaling dedicated game servers for session-based multiplayer games.
+* **Amazon Lumberyard** is a free, cross-platform, 3D game engine for you to create the highest-quality games, connect your games to the vast compute and storage of the AWS Cloud, and engage fans on Twitch.
 
 ## Internet of Things (IoT)
-A network of internet-connected devices embedded in everyday objects enabling sending and receiving data (settings and telemetry).
-* **Azure IoT Hub:** PaaS. Managed service for bi-directional communication. Highly secure/scalable. Supports HTTPS, AMQP, MQTT.
-* **Azure IoT Central:** SaaS. IoT App Platform with industry-specific templates. Requires no deep technical knowledge. Built on top of IoT Hub.
-* **Azure Sphere:** Secure end-to-end IoT solution. Includes certified MCU chips, Azure Sphere OS (Linux-based), and Azure Security Service for trusted device-to-cloud communication.
+* **AWS IoT 1-Click** is a service that enables simple devices to trigger AWS Lambda functions that can execute an action.
+* **AWS IoT Analytics** is a fully-managed service that makes it easy to run and operationalize sophisticated analytics on massive volumes of IoT data without having to worry about the cost and complexity typically required to build an IoT analytics platform.
+* **The AWS IoT Button** is a programmable button based on the Amazon Dash Button hardware.
+* **AWS IoT Core** is a managed cloud service that lets connected devices easily and securely interact with cloud applications and other devices.
+* **AWS IoT Device Defender** is a fully managed service that helps you secure your fleet of IoT devices.
+* **AWS IoT Events** is a fully managed IoT service that makes it easy to detect and respond to events from IoT sensors and applications.
+* **AWS IoT Greengrass** seamlessly extends AWS to devices so they can act locally on the data they generate, while still using the cloud for management, analytics, and durable storage.
+* **AWS IoT Things Graph** is a service that makes it easy to visually connect different devices and web services to build IoT applications.
+* **FreeRTOS** is an operating system for microcontrollers that makes small, low-power edge devices easy to program, deploy, secure, connect, and manage.
 
----
+## Machine Learning
+* **Amazon Augmented AI (Amazon A2I)** is a machine learning service which makes it easy to build the workflows required for human review.
+* **Amazon CodeGuru** is a developer tool that provides intelligent recommendations to improve code quality and identify an application’s most expensive lines of code.
+* **Amazon Comprehend** is a natural language processing (NLP) service that uses machine learning to find insights and relationships in text. No machine learning experience required.
+* **Amazon DevOps Guru** is a Machine Learning (ML) powered service that makes it easy to improve an application’s operational performance and availability. 
+* **Amazon Elastic Inference** allows you to attach low-cost GPU-powered acceleration to Amazon EC2 and Amazon SageMaker instances to reduce the cost of running deep learning inference by up to 75%.
+* **Amazon Forecast** is a fully managed service that uses machine learning to deliver highly accurate forecasts.
+* **Amazon HealthLake** is a HIPAA-eligible service that healthcare providers, health insurance companies, and pharmaceutical companies can use to store, transform, query, and analyze large-scale health data.
+* **Amazon Kendra** is an intelligent search service powered by machine learning.
+* **Amazon Lex** is a service for building conversational interfaces into any application using voice and text.
+* **Amazon Lookout for Equipment** analyzes the data from the sensors on your equipment to automatically train a machine learning model based on just your data, for your equipment – with no ML expertise required.
+* **Amazon Lookout for Metrics** uses machine learning (ML) to automatically detect and diagnose anomalies (i.e. outliers from the norm) in business and operational data, such as a sudden dip in sales revenue or customer acquisition rates.
+* **Amazon Lookout for Vision** is a machine learning (ML) service that spots defects and anomalies in visual representations using computer vision (CV).
+* **Amazon Monitron** is an end-to-end system that uses machine learning (ML) to detect abnormal behavior in industrial machinery, enabling you to implement predictive maintenance and reduce unplanned downtime.
+* **Amazon Personalize** is a machine learning service that makes it easy for developers to create individualized recommendations for customers using their applications.
+* **Amazon Polly** is a service that turns text into lifelike speech.
+* **Amazon Rekognition** makes it easy to add image and video analysis to your applications using proven, highly scalable, deep learning technology that requires no machine learning expertise to use.
+* **Amazon SageMaker** is a fully-managed service that enables developers and data scientists to quickly and easily build, train, and deploy machine learning models at any scale.
+* **Amazon SageMaker Ground Truth** helps you build highly accurate training datasets for machine learning quickly.
+* **Amazon Textract** is a service that automatically extracts text and data from scanned documents.
+* **Amazon Transcribe** is an automatic speech recognition (ASR) service that makes it easy for developers to add speech-to-text capability to their applications.
+* **Amazon Translate** is a neural machine translation service that delivers fast, high-quality, and affordable language translation.
+* **Apache MXNet on AWS** is a fast and scalable training and inference framework with an easy-to-use, concise API for machine learning.
+* **The AWS Deep Learning AMIs** provide machine learning practitioners and researchers with the infrastructure and tools to accelerate deep learning in the cloud, at any scale.
+* **AWS DeepComposer** is the world’s first musical keyboard powered by machine learning to enable developers of all skill levels to learn Generative AI while creating original music outputs.
+* **AWS DeepLens** helps put deep learning in the hands of developers, literally, with a fully programmable video camera, tutorials, code, and pre-trained models designed to expand deep learning skills.
+* **AWS DeepRacer** is a 1/18th scale race car which gives you an interesting and fun way to get started with reinforcement learning (RL).
+* **AWS Inferentia** is a machine learning inference chip designed to deliver high performance at low cost.
+* **TensorFlow** enables developers to quickly and easily get started with deep learning in the cloud.
 
-## Big Data & Analytics
-Technology that extracts, processes, and analyzes information too large/complex for traditional software. Characterized by the 3 V's: Velocity, Volume, and Variety.
-* **Azure Synapse Analytics:** PaaS big data platform (formerly SQL DW). Includes Spark, Synapse SQL (dedicated and on-demand pools), and Synapse Pipelines (Data Factory ETL).
-* **Azure HDInsight:** PaaS multi-purpose big data platform supporting Hadoop, Spark, Kafka, HBase, Hive, Storm.
-* **Azure Databricks:** PaaS big data collaboration platform based on Apache Spark. Unified workspace for notebooks, clusters, and data.
+## Management and Governance
+* **Amazon CloudWatch** is a monitoring and management service built for developers, system operators, site reliability engineers (SRE), and IT managers.
+* **AWS Auto Scaling** monitors your applications and automatically adjusts capacity to maintain steady, predictable performance at the lowest possible cost.
+* **AWS Chatbot** is an interactive agent that makes it easy to monitor and interact with your AWS resources in your Slack channels and Amazon Chime chat rooms.
+* **AWS Compute Optimizer** recommends optimal AWS resources for your workloads to reduce costs and improve performance by using machine learning to analyze historical utilization metrics.
+* **AWS Control Tower** automates the set-up of a baseline environment, or landing zone, that is a secure, well-architected multi-account AWS environment.
+* **AWS CloudFormation** gives developers and systems administrators an easy way to create and manage a collection of related AWS resources, provisioning and updating them in an orderly and predictable fashion.
+* **AWS CloudTrail** is a web service that records AWS API calls for your account and delivers log files.
+* **AWS Config** is a fully managed service that provides you with an AWS resource inventory, configuration history, and configuration change notifications to enable security and governance. 
+* **AWS Launch Wizard** offers a guided way of sizing, configuring, and deploying AWS resources for third party applications.
+* **AWS Organizations** helps you centrally manage and govern your environment as you grow and scale your AWS resources.
+* **AWS OpsWorks** is a configuration management service that provides managed instances of Chef and Puppet.
+* **AWS Proton** is the first fully managed delivery service for container and serverless applications.
+* **AWS Service Catalog** allows organizations to create and manage catalogs of IT services that are approved for use on AWS.
+* **AWS Systems Manager** gives you visibility and control of your infrastructure on AWS.
+* **AWS Trusted Advisor** is an online resource to help you reduce cost, increase performance, and improve security by optimizing your AWS environment. Trusted Advisor provides real-time guidance to help you provision your resources following AWS best practices.
+* **AWS Personal Health Dashboard** provides alerts and remediation guidance when AWS is experiencing events that might affect you.
+* **AWS Managed Services** provides ongoing management of your AWS infrastructure so you can focus on your applications. Implementing best practices.
+* **The AWS Console Mobile Application** lets customers view and manage a select set of resources to support incident response while on-the-go.
+* **AWS License Manager** makes it easier to manage licenses in AWS and on-premises servers from software vendors such as Microsoft, SAP, Oracle, and IBM.
+* **The AWS Well-Architected Tool** helps you review the state of your workloads and compares them to the latest AWS architectural best practices.
 
----
+## Media Services
+* **Amazon Elastic Transcoder** is media transcoding in the cloud.
+* **Amazon Interactive Video Service (Amazon IVS)** is a managed live streaming solution that is quick and easy to set up, and ideal for creating interactive video experiences.
+* **Amazon Nimble Studio** empowers creative studios to produce visual effects, animation, and interactive content entirely in the cloud, from storyboard sketch to final deliverable.
+* **AWS Elemental Appliances and Software** solutions bring advanced video processing and delivery technologies into your data center, co-location space, or on-premises facility.
+* **AWS Elemental MediaConnect** is a high-quality transport service for live video.
+* **AWS Elemental MediaConvert** is a file-based video transcoding service with broadcast-grade features.
+* **AWS Elemental MediaLive** is a broadcast-grade live video processing service.
+* **AWS Elemental MediaPackage** reliably prepares and protects your video for delivery over the Internet.
+* **AWS Elemental MediaStore** is an AWS storage service optimized for media. It gives you the performance, consistency, and low latency required to deliver live streaming video content.
+* **AWS Elemental MediaTailor** lets video providers insert individually targeted advertising into their video streams without sacrificing broadcast-level quality-of-service. 
+* **Amazon Kinesis Video Streams** makes it easy to securely stream video from connected devices to AWS for analytics, machine learning (ML), playback, and other processing.
 
-## Artificial Intelligence & Machine Learning
-AI is the simulation of human intelligence by software. Machine Learning is a subcategory where software is “taught” to draw conclusions and make predictions from data.
-* **Azure Machine Learning:** PaaS for creating, managing, and publishing ML models.
-  * *Features:* Notebooks (Python/R), Automated ML, Designer (no-code graphical interface), Data & Compute management, Pipelines for orchestrating tasks.
+## Migration and Transfer
+* **AWS Application Migration Service (AWS MGN)** allows you to quickly realize the benefits of migrating applications to the cloud without changes and with minimal downtime.
+* **AWS Migration Hub** provides a single location to track the progress of application migrations across multiple AWS and partner solutions.
+* **AWS Application Discovery Service** helps enterprise customers plan migration projects by gathering information about their on-premises data centers.
+* **AWS Database Migration Service** helps you migrate databases to AWS easily and securely.
+* **AWS Server Migration Service (SMS)** is an agentless service which makes it easier and faster for you to migrate thousands of on-premises workloads to AWS.
+* **The AWS Snow Family** helps customers that need to run operations in austere, non-data center environments, and in locations where there's lack of consistent network connectivity.
+* **AWS Snowcone** is the smallest member of the AWS Snow Family of edge computing edge storage, and data transfer devices, weighing in at 4.5 pounds (2.1 kg) with 8 terabytes of usable storage. Snowcone is ruggedized, secure, and purpose-built for use outside of a traditional data center.
+* **AWS Snowball** is an edge computing, data migration, and edge storage device that comes in two options.
+* **AWS Snowmobile** is an exabyte-scale data transfer service used to move extremely large amounts of data to AWS. You can transfer up to 100 PB per Snowmobile.
+* **AWS DataSync** is a data transfer service that makes it easy for you to automate moving data between on-premises storage and Amazon S3 or Amazon Elastic File System (Amazon EFS).
+* **AWS Transfer Family** provides fully managed support for file transfers directly into and out of Amazon S3 or Amazon EFS.
 
----
+## Networking and Content Delivery
+* **Amazon API Gateway** is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale.
+* **Amazon CloudFront** is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency, high transfer speeds, all within a developer-friendly environment.
+* **Amazon Route 53** is a highly available and scalable cloud Domain Name System (DNS) web service.
+* **Amazon Virtual Private Cloud (Amazon VPC)** lets you provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define.
+* **AWS App Mesh** makes it easy to monitor and control microservices running on AWS.
+* **AWS Cloud Map** is a cloud resource discovery service.
+* **AWS Direct Connect** makes it easy to establish a dedicated network connection from your premises to AWS. 
+* **AWS Global Accelerator** is a networking service that improves the availability and performance of the applications that you offer to your global users.
+* **AWS PrivateLink** simplifies the security of data shared with cloud-based applications by eliminating the exposure of data to the public Internet.
+* **AWS Transit Gateway** is a service that enables customers to connect their Amazon Virtual Private Clouds (VPCs) and their on-premises networks to a single gateway.
+* **AWS Virtual Private Network** solutions establish secure connections between your on-premises networks, remote offices, client devices, and the AWS global network.
+* **Elastic Load Balancing (ELB)** automatically distributes incoming application traffic across multiple targets, such as Amazon EC2 instances, containers, and IP addresses.
 
-## Serverless & Integration
-Cloud-hosted execution environments that abstract the underlying infrastructure.
-* **Azure Functions:** FaaS. For nano-services and event-based applications. Scales quickly.
-* **Azure Logic Apps:** PaaS. Serverless enterprise integration service. 200+ connectors. No-code orchestration of business processes and workflows.
-* **Azure Event Grid:** Fully managed event routing service using a publish-subscribe model. Designed for near-real-time applications.
+## Quantum Technologies
+* **Amazon Braket** is a fully managed quantum computing service that helps researchers and developers get started with the technology to accelerate research and discovery.
 
----
+## Robotics
+* **AWS RoboMaker** is a service that makes it easy to develop, test, and deploy intelligent robotics applications at scale.
 
-## DevOps
-Practices that combine development (Dev) and operations (Ops) to shorten the lifecycle and provide CI/CD capabilities.
-* **Azure DevOps:** Collection of services including Boards (tracking), Pipelines (CI/CD workflows), Repos (Git versioning), Test Plans, and Artifacts. Extensible via Marketplace.
-* **Azure DevTest Labs:** PaaS for creating sandbox environments for developers/testers. Quick setup of self-managed VMs with policies (quotas, auto-shutdowns).
+## Satellite
+* **AWS Ground Station** is a fully managed service that lets you control satellite communications, downlink and process satellite data, and scale your satellite operations quickly, easily and cost-effectively without having to worry about building or managing your own ground station infrastructure.
 
----
+## Security, Identity, and Compliance
+* **Amazon Cognito** lets you add user sign-up, sign-in, and access control to your web and mobile apps quickly and easily.
+* **Amazon Cloud Directory** enables you to build flexible, cloud-native directories for organizing hierarchies of data along multiple dimensions.
+* **Amazon Detective** makes it easy to analyze, investigate, and quickly identify the root cause of potential security issues or suspicious activities.
+* **Amazon GuardDuty** is a threat detection service that continuously monitors for malicious or unauthorized behavior to help you protect your AWS accounts and workloads.
+* **Amazon Inspector** is an automated security assessment service that helps improve the security and compliance of applications deployed on AWS.
+* **Amazon Macie** is a security service that uses machine learning to automatically discover, classify, and protect sensitive data in AWS.
+* **AWS Artifact** is your go-to, central resource for compliance-related information that matters to you.
+* **AWS Audit Manager** helps you continuously audit your AWS usage to simplify how you assess risk and compliance with regulations and industry standards.
+* **AWS Certificate Manager** is a service that lets you easily provision, manage, and deploy Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificates for use with AWS services.
+* **The AWS CloudHSM** is a cloud-based hardware security module (HSM) that enables you to easily generate and use your own encryption keys on the AWS Cloud.
+* **AWS Directory Service for Microsoft Active Directory** (also known as AWS Managed Microsoft AD) enables your directory-aware workloads and AWS resources to use managed Active Directory in the AWS Cloud.
+* **AWS Firewall Manager** is a security management service that makes it easier to centrally configure and manage AWS WAF rules across your accounts and applications. 
+* **AWS Identity and Access Management (IAM)** enables you to securely control access to AWS services and resources for your users.
+* **AWS Key Management Service (KMS)** makes it easy for you to create and manage keys and control the use of encryption across a wide range of AWS services and in your applications.
+* **AWS Network Firewall** is a managed service that makes it easy to deploy essential network protections for all of your Amazon Virtual Private Clouds (VPCs).
+* **AWS Resource Access Manager (RAM)** helps you securely share your resources across AWS accounts, within your organization or organizational units (OUs) in AWS Organizations, and with IAM roles and IAM users for supported resource types.
+* **AWS Secrets Manager** helps you protect secrets needed to access your applications, services, and IT resources.
+* **AWS Security Hub** gives you a comprehensive view of your high-priority security alerts and compliance status across AWS accounts.
+* **AWS Shield** is a managed Distributed Denial of Service (DDoS) protection service that safeguards web applications running on AWS.
+* **AWS Single Sign-On (SSO)** is a cloud SSO service that makes it easy to centrally manage SSO access to multiple AWS accounts and business applications.
+* **AWS WAF** is a web application firewall that helps protect your web applications from common web exploits that could affect application availability, compromise security, or consume excessive resources.
 
-## Management Tools
-* **Azure Portal:** Public web-based interface.
-* **Azure PowerShell:** Automation CLI tool. 
-  * Examples: `Connect-AzAccount`, `Get-AzResourceGroup`, `New-AzResourceGroup`, `New-AzVm`.
-* **Azure CLI:** Python-based command line interface.
-  * Examples: `az login`, `az group list`, `az group create`, `az vm create`.
-* **Azure Cloud Shell:** Browser-based scripting environment supporting both PowerShell and CLI. Free and integrated into the Azure Portal, VS Code, and Windows Terminal.
-* **Azure Mobile App:** Management on the go.
-* **Azure Advisor:** Free personalized consultant service providing recommendations for Cost, Security, Reliability, Performance, and Operational Excellence.
-
----
-
-## Security & Networking Security
-
-* **Network Security Groups (NSG):** Filters inbound/outbound traffic to Azure resources in a VNet. Controlled by rules specifying Source/Destination, Protocol, Port (e.g., 3389 RDP, 22 SSH, 80 HTTP), Direction, and Priority.
-* **Application Security Groups (ASG):** Groups VMs to reduce maintenance effort (assign rules to the ASG instead of explicit IP addresses).
-* **User-defined Routes (UDRs):** Custom static routes via Azure Route Table to override default Azure routing.
-* **Azure Firewall:** PaaS managed firewall. High availability, scalable, supports FQDN filtering, integrated with Azure Monitor.
-* **Azure DDoS Protection:** Protects against Distributed Denial of Service attacks.
-  * *Basic:* Automatically enabled for all Azure platform.
-  * *Standard:* Additional mitigation, monitoring, and machine-learning traffic analysis for VNet resources.
-
-### Identity & Access Management
-* **Authentication:** Verification of identity.
-* **Authorization:** Ensuring the identity has permissions to access the resource.
-* **Azure Active Directory (Azure AD):** Identity and Access Management service. Manages users, groups, and applications. Used by Azure, Microsoft 365, Live.com, etc.
-* **Multi-factor Authentication (MFA):** Proving identity using more than one factor (Knowledge, Possession, Physical Characteristic, Location).
-
-### Azure Security Center / Microsoft Defender
-* **Free Tier:** Continuous assessments, security score, basic recommendations.
-* **Paid Tier (Azure Defender ON):** Hybrid security, threat protection, vulnerability scanning, Just-in-Time (JIT) VM access.
-
-### Azure Key Vault
-* PaaS secure storage for Keys, Secrets, and Certificates. Provides centralization and access monitoring.
-
----
-
-## Governance & Compliance
-
-### Role-Based Access Control (RBAC)
-Fine-grained access management built on Azure Resource Manager (ARM).
-* **Role:** What can be done? (Collection of actions/permissions).
-* **Security Principal:** Who can do it? (User, group, service principal, managed identity).
-* **Scope:** Where can it be done? (Management Group > Subscription > Resource Group > Resource).
-* **Role Assignment:** The combination of Role + Principal + Scope.
-
-### Azure Resource Locks
-Prevents accidental deletion/modification. Overrides RBAC permissions.
-* **ReadOnly:** Only read actions allowed.
-* **CanNotDelete:** All actions allowed except delete.
-* Inherited hierarchically. Management Groups cannot be locked.
-
-### Azure Resource Tags
-Name/Value pairs used to logically organize resources for billing, security, and automation (e.g., `environment = production`). **Not** inherited by default.
-
-### Azure Policy
-Enforces resource governance, compliance, and cost management by focusing on resource *properties* (unlike RBAC which focuses on user *actions*). Can deny, audit, or modify resources. Checked during resource creation/update.
-* **Initiative:** A group of policy definitions.
-
-### Azure Blueprints
-Centralized storage for organizationally approved design patterns. Packages Resource Groups, ARM Templates, Policy Assignments, and Role Assignments into a single reproducible package.
-
----
-
-## Cloud Adoption Framework
-A set of tools, best practices, and guidelines to help companies adopt the cloud.
-
-1. **Strategy:** Understand motivation (WHY move?) and determine Business Outcomes (WHAT to measure?). Build a business justification (ROI) using TCO and Pricing Calculators. Pick a first POC project.
-2. **Plan:** Inventory the Digital Estate. Choose one of the 5 R’s (Rehost, Refactor, Rearchitect, Rebuild, Replace). Align organization and skill readiness.
-3. **Ready:** Use Azure Setup Guide and establish an Azure Landing Zone. Expand it and apply best practices.
-4. **Adopt:** Migrate applications, verify scenarios, and improve processes.
-5. **Innovate:** Build business value, use the Innovation Guide tools, and gather feedback.
-6. **Govern & Manage:** Define governance solutions to address needs, provide agility, and control risk.
-7. **Organize:** Define roles (e.g., RACI matrix).
-
----
-
-## Compliance Documents & Sovereign Regions
-
-| Document/Website | Info | Offers | Audience |
-|---|---|---|---|
-| **Microsoft Privacy Statement** | Collection, Purpose and Usage of Personal Data | All Microsoft offers | Everyone |
-| **Online Services Terms (OST)** | Licensing Terms (legal agreement) & usage rights | Microsoft Online Services | Legal teams |
-| **Data Protection Addendum** | Obligations regarding processing of customer data | Microsoft Online Services | Legal/Security teams |
-| **Trust Center** | One-stop portal for security, compliance, privacy policies | Microsoft Online Services | Legal/Security teams, Admins |
-| **Azure Compliance Documentation** | Focused specifically on Azure compliance offerings | Azure | Legal/Security teams, Admins |
-
-### Azure Sovereign Regions
-Provide Azure services in markets with very strict regulatory requirements. Physically isolated from standard regions.
-* **Azure Government:** US government. Only authorized screened personnel get access.
-* **Azure China:** Chinese market. Operated by Chinese telecom 21Vianet.
-
----
-
-## Cost Management & SLAs
-
-### Cost Affecting Factors & Savings
-* **Base Cost:** Driven by Resource Types, Services, Location, and Bandwidth (outbound/egress costs money; inbound is free).
-* **Azure Reservations:** Purchase compute for 1 or 3 years in advance for massive discounts.
-* **Azure Spot VMs:** Purchase unused VM capacity at a discount (interruptible workloads).
-* **Hybrid Use Benefit:** Bring your existing Windows Server or SQL Server licenses to the cloud.
-
-### Cost Tools
-* **Pricing Calculator:** Estimate future costs of Azure services.
-* **TCO Calculator:** Compare the cost of running workloads on-premise vs. Azure.
-* **Azure Cost Management:** Centralized reporting, budgets, alerts, and cost recommendations.
-
-### Service Level Agreement (SLA)
-A formal agreement (a promise) between Microsoft and the customer regarding service availability/uptime. Breaking the SLA results in a Service Credit (discount). Free and Preview services typically have 0% SLA.
-
-| SLA | Monthly Downtime |
-|---|---|
-| 99% | 7h 18m 17s |
-| 99.5% | 3h 39m 8s |
-| 99.9% | 43m 49s |
-| 99.95% | 21m 54s |
-| 99.99% | 4m 22s |
-| 99.999% | 26s |
-
-**Composite SLA Formulas:**
-* **Logical AND (Adding Dependency):**
-  ```text
-  Availability = Availability(S1) * Availability(S2)
-  Example: 99.95% * 99.95% = ~99.9%
+## Storage
+* **Amazon Elastic Block Store (Amazon EBS)** provides persistent block storage volumes for use with Amazon EC2 instances in the AWS Cloud.
+* **Amazon Elastic File System (Amazon EFS)** provides a simple, scalable, elastic file system for Linux-based workloads for use with AWS Cloud services and on-premises resources.
+* **Amazon FSx for Lustre** is a fully managed file system that is optimized for compute-intensive workloads, such as high performance computing, machine learning, and media data processing workflows.
+* **Amazon FSx for Windows File Server** provides a fully managed native Microsoft Windows file system so you can easily move your Windows-based applications that require file storage to AWS.
+* **Amazon Simple Storage Service (Amazon S3)** is an object storage service that offers industry-leading scalability, data availability, security, and performance. 
+* **Amazon S3 Glacier** is a secure, durable, and extremely low-cost storage service for data archiving and long-term backup. It is designed to deliver 99.999999999% durability.
+* **AWS Backup** enables you to centralize and automate data protection across AWS services. 
+* **The AWS Storage Gateway** is a hybrid storage service that enables your on-premises applications to seamlessly use AWS cloud storage.
